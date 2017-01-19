@@ -15,7 +15,7 @@
       "value": "azureuser"
     },
     "adminPassword": {
-      "value": GEN-PASSWORD
+      "value": "Password1"
     },
     "adVMSize": {
       "value": "Standard_D1"
