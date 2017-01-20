@@ -68,7 +68,11 @@
       "metadata": {
         "description": "The name of the NIC attached to the new VM"
       },
-      "defaultValue": "adNic"
+
+      
+      
+      
+    "defaultValue": "adNic"
     },
     "adNicIPAddress": {
       "type": "string",
@@ -109,7 +113,7 @@
       },
       "defaultValue": "adAdministrator"
     },
-    "adminpassword": {
+    "adminPassword": {
       "type": "securestring",
       "metadata": {
         "description": "The password for the Administrator account of the new VM and Domain"
