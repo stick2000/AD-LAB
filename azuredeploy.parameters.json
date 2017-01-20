@@ -20,10 +20,10 @@
           "keyVault": {
             "id": "/subscriptions/4fade8f2-06e9-4eee-a138-25a96753ddb4/resourceGroups/stick2000rg/providers/Microsoft.KeyVault/vaults/Stick2000rg"
     }
-}
+      "secretName": "adminPassword"}
     }       
   },
-          "secretName": "adminPassword"
+          
         }
 
     "adVMSize": {
