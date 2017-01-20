@@ -1,43 +1,39 @@
-{
-  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-    "newStorageAccountName": {
-      "value": "GEN-UNIQUE"
-    },
-    "storageAccountType": {
-      "value": "Standard_GRS"
-    },
-    "location": {
-      "value": "West Eurpoe"
-    },
-    "adminUsername": {
-      "value": "azureuser"
-    },
-    
-    "adminPassword": {
-    "reference": {
-          "keyVault": {
-            "id": "/subscriptions/4fade8f2-06e9-4eee-a138-25a96753ddb4/resourceGroups/stick2000rg/providers/Microsoft.KeyVault/vaults/Stick2000rg"
-    },
-      "secretName": "adminPassword"}
-    }       
-  }
-          
-        }
-
-    "adVMSize": {
-      "value": "Standard_D1"
-    },
-    "domainName": {
-      "value": "mydomain.local"
-    },
-    "addnsName": {
-      "value": "GEN-UNIQUE"
-    },
-    "assetLocation": {
-      "value": "https://raw.githubusercontent.com/stick2000/ad-lab/master/active-directory-new-domain-with-data/"
-    }
-  }
-}
-
+{ 
+"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#", 
+   "contentVersion": "1.0.0.0", 
+   "parameters": { 
+     "newStorageAccountName": { 
+       "value": "GEN-UNIQUE" 
+     }, 
+     "storageAccountType": { 
+       "value": "Standard_GRS" 
+     }, 
+     "location": { 
+       "value": "West Eurpoe" 
+     }, 
+     "adminUsername": { 
+       "value": "azureuser" 
+    }, 
+     "adminPassword": { 
+     "reference": { 
+           "keyVault": { 
+             "id": "/subscriptions/4fade8f2-06e9-4eee-a138-25a96753ddb4/resourceGroups/stick2000rg/providers/Microsoft.KeyVault/vaults/Stick2000rg" 
+     }, 
+       "secretName": "adminPassword"} 
+     }        
+   }, 
+       "adVMSize": { 
+       "value": "Standard_D1" 
+     }, 
+     "domainName": { 
+       "value": "mydomain.local" 
+     }, 
+     "addnsName": { 
+       "value": "GEN-UNIQUE" 
+     }, 
+     "assetLocation": { 
+       "value": "https://raw.githubusercontent.com/stick2000/ad-lab/master/active-directory-new-domain-with-data/" 
+     } 
+   } 
+ } 
+ 
