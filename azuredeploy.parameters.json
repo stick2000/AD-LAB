@@ -20,7 +20,7 @@
 
           },
           "secretName": "adminpassword"
-        }
+        },
 
     "adVMSize": {
       "value": "Standard_D1"
