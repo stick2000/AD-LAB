@@ -436,7 +436,7 @@
             },
             "protectedSettings": {
               "Items": {
-                "AdminPassword": "[parameters('adminPassword')]"
+                "adminPassword": "[parameters('adminPassword')]"
               },
               "DataBlobUri": "[concat(parameters('assetLocation'),'CreateADDomainWithData.psd1')]"
             }
