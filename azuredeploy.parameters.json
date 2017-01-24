@@ -3,7 +3,7 @@
    "contentVersion": "1.0.0.0", 
    "parameters": { 
      "newStorageAccountName": { 
-       "value": "ad-lab01" 
+       "value": "GET-UNIQUE" 
      }, 
      "storageAccountType": { 
        "value": "Standard_GRS" 
