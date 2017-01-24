@@ -22,7 +22,8 @@ Login-AzureRmAccount
 
 # Adjust the 'yournamehere' part of these three strings to
 # something unique for you. Leave the last two characters in each.
-$URI       = 'https://raw.githubusercontent.com/GoateePFE/AzureRM/master/active-directory-new-domain-with-data/azuredeploy.json'
+# $URI       = 'https://raw.githubusercontent.com/GoateePFE/AzureRM/master/active-directory-new-domain-with-data/azuredeploy.json'
+$URI       = 'https://raw.githubusercontent.com/stick2000/AD-LAB/azuredeploy.json'
 $Location  = 'West Europe'
 $rgname    = 'stick2000rg'
 $saname    = 'stick2000sa'     # Lowercase required
