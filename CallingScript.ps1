@@ -24,6 +24,7 @@ Login-AzureRmAccount
 # something unique for you. Leave the last two characters in each.
 # $URI       = 'https://raw.githubusercontent.com/GoateePFE/AzureRM/master/active-directory-new-domain-with-data/azuredeploy.json'
 $URI       = 'https://raw.githubusercontent.com/stick2000/ad-lab/master/azuredeploy.json'
+$URIT      = 'https://raw.githubusercontent.com/stick2000/ad-lab/master/azuredeploy.parameters.json'
 $Location  = 'West Europe'
 $rgname    = 'stick2000rg'
 $saname    = 'stick2000sa'     # Lowercase required
@@ -46,7 +47,8 @@ $MyParams = @{
 
 # Splat the parameters on New-AzureRmResourceGroupDeployment  
 $SplatParams = @{
-    TemplateUri             = $URI 
+    TemplateUri             = $URI
+    TemplateParameterUri    =  
     ResourceGroupName       = $rgname 
     TemplateParameterObject = $MyParams
     Name                    = 'Stick'
