@@ -3,7 +3,7 @@
    "contentVersion": "1.0.0.0", 
    "parameters": { 
      "newStorageAccountName": { 
-       "value": "GET-UNIQUE" 
+       "value": "stick2000sa" 
      }, 
      "storageAccountType": { 
        "value": "Standard_GRS" 
@@ -26,10 +26,10 @@
        "value": "Standard_D1" 
      }, 
      "domainName": { 
-       "value": "mydomain.local" 
+       "value": "stick.com" 
      }, 
      "addnsName": { 
-       "value": "GEN-UNIQUE" 
+       "value": "stick2000ad" 
      }, 
      "assetLocation": { 
        "value": "https://raw.githubusercontent.com/stick2000/ad-lab/master/" 
