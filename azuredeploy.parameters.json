@@ -9,7 +9,7 @@
        "value": "Standard_GRS" 
      }, 
      "location": { 
-       "value": "West Eurpoe" 
+       "value": "West Europe" 
      }, 
      "adminUsername": { 
        "value": "azureuser" 
@@ -32,7 +32,7 @@
        "value": "GEN-UNIQUE" 
      }, 
      "assetLocation": { 
-       "value": "Uri https://raw.githubusercontent.com/stick2000/ad-lab/master/" 
+       "value": "https://raw.githubusercontent.com/stick2000/ad-lab/master/" 
      } 
    } 
  } 
