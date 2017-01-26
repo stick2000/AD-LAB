@@ -57,13 +57,13 @@ $SplatParams = @{
 New-AzureRmKeyVault -VaultName 'Stick2000rgVault' -ResourceGroupName $rgname -Location $Location -EnabledForDeployment
 
 #Add Secret
-$secretvalue = ConvertTo-SecureString 'Wack4$1x' -AsPlainText -Force
+$secretvalue = ConvertTo-SecureString '' -AsPlainText -Force
 Set-AzureKeyVaultSecret -VaultName 'Stick2000rgVault' -Name 'adminPassword' -SecretValue $secretvalue
 
 
 # This takes ~30 minutes
 # One prompt for the domain admin password
-New-AzureRmResourceGroupDeployment @SplatParams -Verbose
+New-AzureRmResourceGroupDeployment -ResourceGroupName 'Stick2000rg' -templateuri 'https://raw.githubusercontent.com/stick2000/ad-lab/master/azuredeploy.json' -TemplateParameterUri 'https://raw.githubusercontent.com/stick2000/ad-lab/master/azuredeploy.parameters.json'
 
 # Find the VM IP and FQDN
 $PublicAddress = (Get-AzureRmPublicIpAddress -ResourceGroupName $rgname)[0]
