@@ -2,36 +2,37 @@
 "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#", 
    "contentVersion": "1.0.0.0", 
    "parameters": { 
-     "newStorageAccountName": { 
-       "value": "stick2000sa" 
-     }, 
-     "storageAccountType": { 
-       "value": "Standard_GRS" 
-     }, 
-     "location": { 
-       "value": "West Europe" 
-     }, 
-     "adminUsername": { 
-       "value": "azureuser" 
-    }, 
-     "adminPassword": { 
-     "reference": { 
-           "keyVault": { 
-             "id": "/subscriptions/f85a3ded893f4566b75b89274d8692e7/resourceGroups/stick2000rg/providers/Microsoft.KeyVault/vaults/Stick2000rgvault" 
-     }, 
-       "secretName": "adminPassword"} 
-     },         
-       "adVMSize": { 
-       "value": "Standard_D1" 
-     }, 
-     "domainName": { 
-       "value": "stick.com" 
-     }, 
-     "addnsName": { 
-       "value": "stick2000ad" 
-     }, 
-     "assetLocation": { 
-       "value": "https://raw.githubusercontent.com/stick2000/ad-lab/master/" 
-     } 
-   } 
+                    "newStorageAccountName": { 
+                    "value": "stick2000sa" 
+                    },     
+                    "storageAccountType": { 
+                    "value": "Standard_GRS" 
+                    }, 
+                    "location": { 
+                    "value": "West Europe" 
+                    }, 
+                    "adminUsername": { 
+                    "value": "azureuser" 
+                    }, 
+                    "adminPassword": { 
+                        "reference": { 
+                            "keyVault": { 
+                            "id": "/subscriptions/f85a3ded893f4566b75b89274d8692e7/resourceGroups/stick2000rg/providers/Microsoft.KeyVault/vaults/Stick2000rgvault" 
+                                        }, 
+                            "secretName": "adminPassword"
+                                     } 
+                                     },         
+                    "adVMSize": { 
+                    "value": "Standard_D1" 
+                    }, 
+                    "domainName": { 
+                    "value": "stick.com" 
+                    }, 
+                    "addnsName": { 
+                    "value": "stick2000ad" 
+                    }, 
+                    "assetLocation": { 
+                    "value": "https://raw.githubusercontent.com/stick2000/ad-lab/master/" 
+                    } 
+                } 
  }
