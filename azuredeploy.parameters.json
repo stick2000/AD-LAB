@@ -17,7 +17,7 @@
                     "adminPassword": { 
                         "reference": { 
                             "keyVault": { 
-                            "id": "/subscriptions/f85a3ded893f4566b75b89274d8692e7/resourceGroups/stick2000rg/providers/Microsoft.KeyVault/vaults/Stick2000rgVault" 
+                            "id": "/subscriptions/4fade8f2-06e9-4eee-a138-25a96753ddb4/resourceGroups/stick2000rg/providers/Microsoft.KeyVault/vaults/Stick2000rgVault" 
                                         }, 
                             "secretName": "adminPassword"
                                      } 
