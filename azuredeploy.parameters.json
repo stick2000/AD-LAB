@@ -3,7 +3,7 @@
    "contentVersion": "1.0.0.0", 
    "parameters": { 
                     "newStorageAccountName": { 
-                    "value": "stick2000sa" 
+                    "value": "stack2000sa" 
                     },     
                     "storageAccountType": { 
                     "value": "Standard_GRS" 
@@ -17,7 +17,7 @@
                     "adminPassword": { 
                         "reference": { 
                             "keyVault": { 
-                            "id": "/subscriptions/4fade8f2-06e9-4eee-a138-25a96753ddb4/resourceGroups/stick2000rg/providers/Microsoft.KeyVault/vaults/Stick2000rgVault" 
+                            "id": "/subscriptions/4fade8f2-06e9-4eee-a138-25a96753ddb4/resourceGroups/stack2000rg/providers/Microsoft.KeyVault/vaults/Stack2000rgVault" 
                                         }, 
                             "secretName": "adminPassword"
                                      } 
@@ -26,10 +26,10 @@
                     "value": "Standard_D1" 
                     }, 
                     "domainName": { 
-                    "value": "stick.com" 
+                    "value": "stack.com" 
                     }, 
                     "addnsName": { 
-                    "value": "stick2000ad" 
+                    "value": "stack2000ad" 
                     }, 
                     "assetLocation": { 
                     "value": "https://raw.githubusercontent.com/stick2000/ad-lab/master/" 
